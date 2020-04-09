@@ -1,8 +1,8 @@
 import mongoose, { Schema } from "mongoose";
 
 const incomeSchema = new Schema({
-    user: {type: Schema.objectId, ref: 'usuarios', required: true},
-    person: {type: Schema.objectId, ref: 'personas', required: true},
+    user: {type: Schema.ObjectId, ref: 'usuarios', required: true},
+    person: {type: Schema.ObjectId, ref: 'personas', required: true},
     voucher_type: {type: String, maxlength: 20, required: true},
     voucher_serial: { type: String, maxlength: 7},
     voucher_num: {type: String, maxlength: 10, required: true},
