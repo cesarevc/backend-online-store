@@ -15,11 +15,11 @@ async function decreaseStock (id_article, quantity){
 export default {
     add: async (req, res, next) => {
         try {
-            const reg = await models.Income.create(req.body);
+            const reg = await models.Sale.create(req.body);
             //actulizar el stock
             let details = req.body.details;
             details.map ((x) => {
-                increaseStock(x._id, x.quantity);
+                decreaseStock(x._id, x.quantity);
             });
             res.status(200).json(reg);
         } catch (e) {
@@ -31,7 +31,7 @@ export default {
     },
     query: async (req, res, next) => {
         try {
-            const reg = await models.Income.findOne({_id: req.query._id})
+            const reg = await models.Sale.findOne({_id: req.query._id})
             .populate('usuarios', {name: 1})
             .populate('personas', {name: 1});
             if (!reg) {
@@ -51,7 +51,7 @@ export default {
     list: async (req, res, next) => {
         try {
             let value = req.query.value;
-            const reg = await models.Income.find({$or:[{'voucher_num': new RegExp(value, 'i')}, {'voucher_serial': new RegExp(value, 'i')}]})
+            const reg = await models.Sale.find({$or:[{'voucher_num': new RegExp(value, 'i')}, {'voucher_serial': new RegExp(value, 'i')}]})
             .populate('usuarios', {name: 1})
             .populate('personas', {name: 1})
             .sort({'createdAt': -1});
@@ -66,7 +66,7 @@ export default {
     //No se deben modificar mucho menos borrar este tipo de transacciones
     // update: async (req, res, next) => {
     //     try {
-    //         const reg = await models.Income.findByIdAndUpdate({_id: req.body._id}, {name: req.body.name, description: req.body.description});
+    //         const reg = await models.Sale.findByIdAndUpdate({_id: req.body._id}, {name: req.body.name, description: req.body.description});
     //         res.status(200).json(reg);
     //     } catch (error) {
     //         res.status(500).send({
@@ -77,7 +77,7 @@ export default {
     // },
     // remove : async (req, res, next) => {
     //     try {
-    //         const reg = await models.Income.findByIdAndDelete({_id: req.body._id});
+    //         const reg = await models.Sale.findByIdAndDelete({_id: req.body._id});
     //         res.status(200).json(reg);
     //     } catch (error) {
     //         res.status(500).send({
@@ -86,25 +86,9 @@ export default {
     //         next(e);
     //     }
     // },
-    activate : async (req, res, next) => {
+    activate: async (req, res, next) => {
         try {
-            const reg = await models.Income.findByIdAndUpdate({_id: req.body._id}, {state: 1});
-            //actulizar el stock
-            let details = reg.details;
-            details.map ((x) => {
-                increaseStock(x._id, x.quantity);
-            });
-            res.status(200).json(reg);
-        } catch (error) {
-            res.status(500).send({
-                message: 'Ocurrio un error'
-            });
-            next(e);
-        }
-    },
-    deactivate : async (req, res, next) => {
-        try {
-            const reg = await models.Income.findByIdAndUpdate({_id: req.body._id}, {state: 0});
+            const reg = await models.Sale.findByIdAndUpdate({_id: req.body._id}, {state: 1});
             //actulizar el stock
             let details = reg.details;
             details.map ((x) => {
@@ -118,9 +102,25 @@ export default {
             next(e);
         }
     },
+    deactivate: async (req, res, next) => {
+        try {
+            const reg = await models.Sale.findByIdAndUpdate({_id: req.body._id}, {state: 0});
+            //actulizar el stock
+            let details = reg.details;
+            details.map ((x) => {
+                increaseStock(x._id, x.quantity);
+            });
+            res.status(200).json(reg);
+        } catch (error) {
+            res.status(500).send({
+                message: 'Ocurrio un error'
+            });
+            next(e);
+        }
+    },
     lastTwelveMonths: async (req, res, next) => {
         try {
-            const reg = await models.Income.aggregate(
+            const reg = await models.Sale.aggregate(
                [ 
                    {
                         $group: {
