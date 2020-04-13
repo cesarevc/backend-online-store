@@ -4,6 +4,7 @@ import articleRouter from './article';
 import userRouter from './user';
 import personRouter from './person';
 import incomeRouter from './income';
+import saleRouter from './sale'
 
 const router = routerx();
 
@@ -12,5 +13,7 @@ router.use('/article', articleRouter);
 router.use('/user', userRouter);
 router.use('/person', personRouter);
 router.use('/income', incomeRouter);
+router.use('/sale', saleRouter);
+
 
 export default router;
