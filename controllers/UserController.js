@@ -109,14 +109,11 @@ export default {
         }
     },
     login : async (req, res, next) => {
-        console.log("CHAPERRA",req.body);
         try {
            let user = await models.User.findOne({email: req.body.email, state: '1'});
-           console.log("CHAPERRA2",user); 
            if (user){
                 //exist user
                 let match = await bcrypt.compare(req.body.password, user.password);
-                console.log("CHAPERRA2",user);
                 if (match){
                     let tokenReturn = await token.encode(user._id);
                     res.status(200).json({user, tokenReturn})
