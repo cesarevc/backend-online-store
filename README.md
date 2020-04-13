@@ -1,5 +1,5 @@
 # Online-Store (Backend) 
-_Este es un proyecto de practica donde se genero un backend para una tienda online_
+_Este es un proyecto dónde se genero un backend para una tienda online_
 
 ## Comenzando 🚀
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
@@ -24,11 +24,19 @@ _Las herramientas utilizadas para este proyecto han sido_
 * > jwt
 * > Morgan
 * > Cors
-## Transpiler Babel.js
+### Transpiler Babel.js
 * > babel-cli
 * > babel-preset-env
 * > babel-preset-stage-3
 * >Mongoose
+
+
+
+
+
+
+
+
 
 
 ## Autores ✒️
@@ -39,7 +47,6 @@ _Las herramientas utilizadas para este proyecto han sido_
 ## Licencia 📄
 
 Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
 
 
 
