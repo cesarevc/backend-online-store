@@ -65,7 +65,6 @@ This project is under the license MIT - look at the file [LICENSE.md](LICENSE.md
 
 
 **Free Software, Hell Yeah!**
-----
 
 ---
 ⌨️ with ❤️ by [cesarevc](https://github.com/cesarevc) 😊
