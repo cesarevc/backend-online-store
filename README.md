@@ -1,21 +1,21 @@
 # Online-Store (Backend) 
-_This is a project where a backend will be generated for an online store_
+_This is a project where generated a backend for an online store_
 
 ## Starting 🚀
 
 _These instructions will allow you to obtain a copy of the running project on your local machine for development and testing purposes._
-See ** Deployment ** to learn how to deploy the project.
+See **Deployment** to learn how to deploy the project.
 
 
 
-## Built with 🛠️ 📋
+## Built with 🛠️ 
 
 _the project uses a number of open-source projects to work properly:_
 
 
-* [nodejs](https://nodejs.org/es/) - Is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-* [Express](https://expressjs.com/es/) - fast node.js network app framework [@tjholowaychuk].
-* [mongoDB](https://www.mongodb.com/es) - Non-relational database manipulator.
+* [nodejs](https://nodejs.org/es/) - is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+* [express](https://expressjs.com/es/) - is a web application framework for nodejs
+* [mongoDB](https://www.mongodb.com/es) - non-relational database manipulator.
 
 
 ### Installation 📋
@@ -62,9 +62,10 @@ $ npm start
 ## License 📄
 
 This project is under the license MIT - look at the file [LICENSE.md](LICENSE.md) for more details.
-----
+
 
 **Free Software, Hell Yeah!**
+----
 
 ---
 ⌨️ with ❤️ by [cesarevc](https://github.com/cesarevc) 😊
