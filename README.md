@@ -1,54 +1,70 @@
 # Online-Store (Backend) 
-_Este es un proyecto dónde se genero un backend para una tienda online_
+_This is a project where a backend will be generated for an online store_
 
-## Comenzando 🚀
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-Mira **Deployment** para conocer como desplegar el proyecto.
+## Starting 🚀
 
-### Pre-requisitos 📋
-
-## Ejecutando las pruebas ⚙️
-
-## Despliegue 📦
-
-## Construido con 🛠️
-_Las herramientas utilizadas para este proyecto han sido_
-
-* [nodejs](https://nodejs.org/es/) - Node.js® es un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome.
-* [Expressjs](https://expressjs.com/es/) - Es el framework utilizado
-* [mongoDB](https://www.mongodb.com/es) - Base de datos
-* 
-
-* > express-promise-router
-* > brcryptjs
-* > jwt
-* > Morgan
-* > Cors
-### Transpiler Babel.js
-* > babel-cli
-* > babel-preset-env
-* > babel-preset-stage-3
-* >Mongoose
+_These instructions will allow you to obtain a copy of the running project on your local machine for development and testing purposes._
+See ** Deployment ** to learn how to deploy the project.
 
 
 
+## Built with 🛠️ 📋
+
+_the project uses a number of open-source projects to work properly:_
 
 
+* [nodejs](https://nodejs.org/es/) - Is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+* [Express](https://expressjs.com/es/) - fast node.js network app framework [@tjholowaychuk].
+* [mongoDB](https://www.mongodb.com/es) - Non-relational database manipulator.
 
 
+### Installation 📋
+
+This project requires [Node.js](https://nodejs.org/) v4+ to run.
+
+Install moongodb 
+
+```sh
+$ sudo apt-get install mongodb
+
+$ sudo apt-get update
+
+$ sudo service mongodb start
+or
+$ sudo service mongodb restart
+
+$ sudo mongo
+```
 
 
+Install the dependencies and devDependencies and start the server. ⚙️
 
-## Autores ✒️
+```sh
+$ npm install
+or
+$ npm i
+```
 
-* **César Enrique** - *Trabajo Inicial* - [cesarevc](https://github.com/cesarevc)
-* **César Enrique** - *Documentación* - [cesarevc](https://github.com/cesarevc)
+## Deployment 📦
 
-## Licencia 📄
+Run the project at port 4000
 
-Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+First Tab:
+```sh
+$ npm start
+```
 
+## Authors ✒️
 
+* **César Enrique** - *Initial work* - [cesarevc](https://github.com/cesarevc)
+* **César Enrique** - *Documentation* - [cesarevc](https://github.com/cesarevc)
+
+## License 📄
+
+This project is under the license MIT - look at the file [LICENSE.md](LICENSE.md) for more details.
+----
+
+**Free Software, Hell Yeah!**
 
 ---
-⌨️ con ❤️ por [cesarevc](https://github.com/cesarevc) 😊
+⌨️ with ❤️ by [cesarevc](https://github.com/cesarevc) 😊
