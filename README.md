@@ -1,54 +1,53 @@
-# Online-Store (Backend) 
-_Este es un proyecto dónde se genero un backend para una tienda online_
+# Online-Store (Backend)
+_This is a backend for an online store_
 
-## Comenzando 🚀
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-Mira **Deployment** para conocer como desplegar el proyecto.
-
-### Pre-requisitos 📋
-
-## Ejecutando las pruebas ⚙️
-
-## Despliegue 📦
-
-## Construido con 🛠️
-_Las herramientas utilizadas para este proyecto han sido_
-
-* [nodejs](https://nodejs.org/es/) - Node.js® es un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome.
-* [Expressjs](https://expressjs.com/es/) - Es el framework utilizado
-* [mongoDB](https://www.mongodb.com/es) - Base de datos
-* 
-
-* > express-promise-router
-* > brcryptjs
-* > jwt
-* > Morgan
-* > Cors
-### Transpiler Babel.js
-* > babel-cli
-* > babel-preset-env
-* > babel-preset-stage-3
-* >Mongoose
+## Starting 🚀
+_These instructions will allow you to obtain a copy of this project and run on your local machine for development and testing purposes._
+you can review **Deployment** to learn how to deploy the project.
 
 
+## Built with 🛠️
+
+_the project uses a number of open-source projects to work properly:_
 
 
+* [nodejs](https://nodejs.org/es/) - is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+* [express](https://expressjs.com/es/) - is a web application framework for nodejs.
+* [mongoDB](https://www.mongodb.com/es) - non-relational database manipulator.
 
 
+### Installation 📋
+
+This project requires [Nodejs](https://nodejs.org/) v4+ and [MongoDB](https://www.mongodb.com/es) in your machine to run.
+
+Install the dependencies and devDependencies and start the server. ⚙️
+
+```sh
+$ npm install
+or
+$ npm i
+```
+
+## Deployment 📦
+
+This project will run at port 4000
+
+Run the project:
+```sh
+$ npm start
+```
+
+## Authors ✒️
+
+* **César Enrique** - *Initial work* - [cesarevc](https://github.com/cesarevc)
+* **César Enrique** - *Documentation* - [cesarevc](https://github.com/cesarevc)
+
+## License 📄
+
+This project is under the license MIT - look at the file [LICENSE.md](LICENSE.md) for more details.
 
 
-
-
-## Autores ✒️
-
-* **César Enrique** - *Trabajo Inicial* - [cesarevc](https://github.com/cesarevc)
-* **César Enrique** - *Documentación* - [cesarevc](https://github.com/cesarevc)
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-
+**Free Software, Hell Yeah!**
 
 ---
-⌨️ con ❤️ por [cesarevc](https://github.com/cesarevc) 😊
+⌨️ with ❤️ by [cesarevc](https://github.com/cesarevc) 😊
